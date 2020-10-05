@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=ScoreCounter
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ PocitadloSkore\ here.\r\n\ \r\n\ @author\ (Jan\ Botek)\ \r\n\ @version\ (1.0.0)\r\n
+comment1.params=
+comment1.target=ScoreCounter()
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Method\ act-\r\n\ \ Keeps\ the\ score\ counter\ updated.\r\n
+comment3.params=
+comment3.target=int\ getScore()
+comment3.text=\r\n\ Method\ getScore-\r\n\ \ Returns\ the\ current\ score.\r\n\ @return\ int\r\n
+comment4.params=score
+comment4.target=void\ setScore(int)
+comment4.text=\r\n\ Method\ setScore-\ \r\n\ \ Sets\ the\ score\ to\ the\ passed\ int.\r\n\ @param\ int\ score\r\n
+numComments=5

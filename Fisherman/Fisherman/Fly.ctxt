@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Fly
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Fly\ here.\r\n\ \r\n\ @author\ (Jan\ Botek)\ \r\n\ @version\ (1.0.0)\r\n
+comment1.params=lifespan
+comment1.target=Fly(int)
+comment1.text=\r\n\ Fly\ Constructor\r\n\r\n\ @param\ lifespan\ A\ parameter-\ for\ how\ many\ game\ cycles\ will\ the\ fly\ live\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Method\ act-\r\n\ \ ensures\ that\ the\ fly\ will\ disappear\ after\ the\ end\ of\ its\ lifespan\r\n
+comment3.params=
+comment3.target=int\ getValue()
+comment3.text=\r\n\ Method\ getValue-\r\n\ returns\ the\ value\ of\ the\ fly\ based\ on\ its\ y\ coordinate\r\n\ y\ <\ 380\ \=\ 3\r\n\ y\ <\ 480\ \=\ 2\r\n\ y\ <\ 600\ \=\ 1\r\n\ \r\n\ @return\ int\ value\r\n
+numComments=4
