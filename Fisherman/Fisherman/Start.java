@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Start here.
+ * This screen represents the main manu
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Jan Botek) 
+ * @version (1.0.0)
  */
 public class Start extends World
 {
@@ -22,9 +22,14 @@ public class Start extends World
         Greenfoot.start();
     }
 
+    /**
+     * Method act-
+     *  if the player presses "s" it will initialize the lake world
+     *
+     */
     public void act(){
         if(Greenfoot.isKeyDown("s")){
-            Greenfoot.setWorld(new MyWorld());
+            Greenfoot.setWorld(new Lake());
             Greenfoot.delay(60);
         }
     }

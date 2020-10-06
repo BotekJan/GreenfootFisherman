@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Hook here.
+ * This class is used to represent the hook that the fisherman is catching the fish wih
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Jan Botek) 
+ * @version (1.0.0)
  */
 public class Hook extends Actor
 {   
@@ -23,6 +23,10 @@ public class Hook extends Actor
         this.getImage().scale(25, 25);   
         setRotation(90);
     }
+    /**
+     * Method act
+     *  this method ensures the falling of the hook and the possible setting of the GAME OVER screen when the hook hits the fish
+     */
     public void act()
     {
         move(speed);
@@ -33,12 +37,7 @@ public class Hook extends Actor
         }
         else if (this.isTouching(Fish.class))
         {
-            Greenfoot.stop();
-            gameOver();
+            Greenfoot.setWorld(new GameOver("Fisherman"));
         }
-    }
-    
-    private void gameOver(){
-        Greenfoot.setWorld(new GameOver("Fisherman"));
     }
 }

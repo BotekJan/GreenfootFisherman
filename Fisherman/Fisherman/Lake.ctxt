@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Lake
+comment0.text=\r\n\ This\ is\ the\ world\ where\ the\ game\ is\ happening\r\n\ \r\n\ @author\ (Jan\ Botek)\ \r\n\ @version\ (1.0.0)\r\n
+comment1.params=
+comment1.target=Lake()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Lake.\r\n\ \r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Method\ act\r\n\ \ every\ game\ tick\ there\ is\ a\ 1\ in\ 100\ chance\ that\ this\ method\ will\ spawn\ a\ new\ fly\ at\ a\ random\ position\r\n\r\n
+comment3.params=
+comment3.target=int\ getScore()
+comment3.text=\r\n\ Method\ getScore-\r\n\ \ this\ method\ is\ used\ to\ interact\ with\ the\ score\ counter\ -\ get\ its\ value\r\n\r\n\ @return\ int\ score\r\n
+comment4.params=score
+comment4.target=void\ setScore(int)
+comment4.text=\r\n\ Method\ setScore-\r\n\ \ this\ method\ is\ used\ to\ interact\ with\ the\ score\ counter\ -\ set\ its\ value\r\n\r\n\ @param\ score\ -\ int\ that\ the\ score\ counter\ will\ set\ as\ its\ value\r\n
+numComments=5

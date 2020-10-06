@@ -1,16 +1,22 @@
 #BlueJ class context
 comment0.target=Fisherman
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Fisherman\ here.\r\n\ \r\n\ @author\ (Jan\ Botek)\ \r\n\ @version\ (1.0.0)\r\n
+comment0.text=\r\n\ One\ of\ the\ two\ playable\ components\ -\ fisherman\ moves\ by\ "a"\ and\ "d"\ and\ throws\ down\ hooks\ by\ "m"\r\n\ his\ purpose\ is\ to\ try\ to\ hit\ the\ fish\ with\ the\ hooks\ that\ he\ throws\r\n\ \r\n\ @author\ (Jan\ Botek)\ \r\n\ @version\ (1.0.0)\r\n
 comment1.params=speed\ maxHooks
 comment1.target=Fisherman(int,\ int)
+comment1.text=\r\n\ Fisherman\ Constructor\r\n\r\n\ @param\ speed\ int\ the\ speed\ that\ the\ fisherman\ will\ move\ at\r\n\ @param\ maxHooks\ int\ the\ maximum\ amount\ of\ hooks\ the\ fisherman\ can\ have\ at\ the\ same\ time\r\n
 comment2.params=
 comment2.target=void\ act()
+comment2.text=\r\n\ Method\ act-\r\n\ \ runs\ the\ behavioral\ methods\ of\ the\ Fisherman\ class\r\n
 comment3.params=
 comment3.target=void\ decrementCurrentHooks()
+comment3.text=\r\n\ Method\ decrementCurrentHooks\r\n\ \ this\ method\ is\ here\ for\ when\ the\ hooks\ hits\ the\ edge\ so\ it\ can\ decrement\ the\ currenthooks\ when\ its\ deleted\r\n\r\n
 comment4.params=
 comment4.target=void\ movement()
+comment4.text=\r\n\ Method\ movement\r\n\ \ this\ method\ ensures\ the\ movement\ of\ the\ fisherman\r\n\ \ a-\ left\r\n\ \ d-\ right\r\n
 comment5.params=
 comment5.target=void\ throwingHooks()
+comment5.text=\r\n\ Method\ throwingHooks\r\n\ \ this\ method\ ensures\ that\ by\ pressing\ "m"\ the\ fisherman\ can\ possibly\ throw\ a\ hook\r\n
 comment6.params=
 comment6.target=void\ gameOver()
+comment6.text=\r\n\ Method\ gameOver\r\n\ \ this\ method\ sets\ the\ GAME\ OVER\ screen\ when\ the\ fishermans\ interest\ is\ less\ or\ equal\ to\ 0\r\n
 numComments=7

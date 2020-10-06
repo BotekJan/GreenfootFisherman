@@ -1,16 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class GameOver here.
+ * This greenfoot world initiates when the game ends
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Jan Botek) 
+ * @version (1.0.0)
  */
 public class GameOver extends World
 {
     /**
-     * Constructor for objects of class GameOver.
-     * 
+     * GameOver Constructor
+     *
+     * @param winner String - later displayed as "Winner: " + winner + "!"
      */
     public GameOver(String winner)
     {    
@@ -20,9 +21,15 @@ public class GameOver extends World
         addObject(new Image(new GreenfootImage("Press \"t\" to play again. ", 40, Color.BLACK, Color.WHITE)), 550, 500);
         Greenfoot.start();
     }
+
+    /**
+     * Method act-
+     *  when the player presses t - the they will start a new game
+     *
+     */
     public void act(){
         if(Greenfoot.isKeyDown("t")){
-            Greenfoot.setWorld(new MyWorld());
+            Greenfoot.setWorld(new Lake());
             Greenfoot.delay(60);
         }
     }

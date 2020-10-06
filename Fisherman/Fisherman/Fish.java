@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Fish here.
+ * One of the 2 playable components - fishes purpose is to eat flies which incriminate the score and dodge the hooks that the fisherman is throwing
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Jan Botek) 
+ * @version (1.0.0)
  */
 public class Fish extends Actor
 {
@@ -78,7 +78,7 @@ public class Fish extends Actor
     private void eatingFlies(){
         Fly fly = (Fly) getOneIntersectingObject(Fly.class);
         if(fly != null){
-            MyWorld world = (MyWorld) getWorld();
+            Lake world = (Lake) getWorld();
             world.setScore(world.getScore() + fly.getValue());
             removeTouching(Fly.class);
         }

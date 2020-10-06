@@ -1,10 +1,11 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Image here.
+ * This class is used so we can display images posing as actors in the game worlds without
+ * creating a new class for each image
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Jan Botek) 
+ * @version (1.0.0)
  */
 public class Image extends Actor
 {
