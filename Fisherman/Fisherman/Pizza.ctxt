@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Pizza
+comment0.text=\r\n\ When\ the\ fish\ touches\ the\ pizza,\ the\ pizza\ will\ dissapear\ and\ the\ fish\ will\ get\ a\ bonus\ speed\ for\ a\ certain\ time.\r\n\ \r\n\ @author\ (Jan\ Botek)\ \r\n\ @version\ (1.0.0)\r\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=void\ falling()
+comment3.params=
+comment3.target=void\ gettingEaten()
+numComments=4

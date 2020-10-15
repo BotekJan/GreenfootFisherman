@@ -10,16 +10,21 @@ public class Fish extends Actor
 {
     private int speed;
     private int score;
+    private int bonusSpeed;
+    private int bonusSpeedDuration = 0;
     GreenfootImage image1;
     GreenfootImage image2;
     /**
      * Fish Constructor
      *
      * @param int speed - sets the speed at which the fish is going to move
+     * @param int bonuspeed - the amount that the speed will increase when the fish
+     *                          gets a bonus
      */
-    public Fish(int speed)
+    public Fish(int speed, int bonusSpeed)
     {
         this.speed= speed;
+        this.bonusSpeed = bonusSpeed;
         this.image1 = new GreenfootImage("images/fish1.png");
         this.image2 = new GreenfootImage("images/fish2.png");
         this.setImage(image1);
@@ -34,6 +39,28 @@ public class Fish extends Actor
     {
         movement();
         eatingFlies();
+        bonusSpeed();
+    }
+    
+    /**
+     * Method eatAPizza
+     *  this method is called by the pizza when the fish eats is and it sets
+     *  the duration of the bonus speed
+     *  
+     *  @param int bonusDuration - duration of the bonus speed in game cycles
+     */
+    public void getBonusSpeed(int bonusDuration){
+        bonusSpeedDuration = bonusDuration;
+        speed = speed + bonusSpeed;
+    }
+    
+    private void bonusSpeed(){
+        if(bonusSpeedDuration > 0){
+            bonusSpeedDuration--;
+            if(bonusSpeedDuration == 0){
+                speed = speed - bonusSpeed;
+            }
+        }
     }
 
     /**
